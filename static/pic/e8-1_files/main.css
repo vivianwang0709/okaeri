@@ -1,0 +1,34 @@
+.wrap {
+  background-color: #FBD570;
+  margin-left: 100px;
+  margin-right: 150px;
+}
+.wrap .left {
+  float: left;
+  width: 100px;
+  background: #00f;
+  height: 180px;
+  margin-left: calc(-200%);
+}
+.wrap .right {
+  float: right;
+  width: 150px;
+  background: #0f0;
+  height: 200px;
+  margin-right: -150px;
+}
+.wrap .center {
+  background: #B373DA;
+  height: 150px;
+  float: left;
+  width: 100%;
+}
+.clearfix:before {
+  display: table;
+  content: " ";
+}
+.clearfix:after {
+  display: table;
+  content: " ";
+  clear: both;
+}

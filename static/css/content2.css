@@ -1,0 +1,27 @@
+.content2 {
+  position: relative;
+  padding: 30px 0;
+}
+.content2:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  background-color: #fff;
+  background-image: url(../pic/about1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.7;
+  width: 100%;
+  height: 100%;
+}
+.content2-info {
+  position: relative;
+  margin: 0 auto;
+  padding: 10px 30px 30px 30px ;
+  max-width: 1100px;
+  width: 90%;
+  background-color: white;
+  z-index: 1000;
+}

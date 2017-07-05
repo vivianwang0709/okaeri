@@ -1,0 +1,188 @@
+//
+// font
+// --------------------------------------------------
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('/static/fonts/glyphicons-halflings-regular.eot');
+  src: url('/static/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('/static/fonts/glyphicons-halflings-regular.woff') format('woff'), url('/static/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('/static/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
+
+//
+// header
+// --------------------------------------------------
+
+a{
+    color: white;
+}
+
+a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.page{
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.header{
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    background: #000;
+}
+
+.header-info{
+    position: relative;
+    padding: 5px 0;
+    background: #dfd6b8;
+    >p{
+        margin: 0;
+        margin-left:30px ;
+    }
+    @media (max-width: 768px) {
+        >p{
+            text-align: center;
+            margin: 0;
+        }
+    }
+}
+
+.header-navbar{
+    position: relative;
+    margin: 2px auto;
+    max-width: 1000px;
+    width: 100%;
+    color: white;
+    font-size: 16px;
+
+
+    >ul{
+        float: left;
+        margin: 0 0 0 60px;
+
+        @media (max-width: 768px) {
+           display: none;
+        } 
+
+        >li{
+            display: inline-block;
+            padding: 20px;
+            vertical-align: middle;
+            height: 74px;
+            cursor: pointer;
+        }
+
+        >li:last-child{
+            padding: 15px;
+
+            >a{
+                color: white;
+                background-color: #3C5B9B;
+                border: 2px solid #4f72bb;
+            }
+            
+            a:hover{
+                color: #3C5B9B;
+                background-color: white;
+            }
+        }
+
+
+        >li:not(:last-child):hover{
+            background-color: #ac162a;        
+        }
+
+    }
+
+    @media (max-width: 768px) {
+        padding:0 40px;
+    }
+
+}
+
+
+
+.header-button{
+    
+    >button{
+        float: right;
+        display: none;
+        margin: 21px 0;
+        
+        @media (max-width: 768px) {
+           display: block;
+           margin:12px 0;
+        
+        }
+
+        :last-child{
+            margin-bottom: 5px;
+        } 
+    }
+
+    .header-icon{
+        display: block;
+        margin-top: 5px;
+        width: 25px;
+        height: 3px;
+        background-color: #d40c0c;
+    }
+
+
+    >a{
+        float: left;
+        margin-left: 20px;
+        >img{
+            height: 74px;
+        }
+        
+        @media (max-width: 768px) {
+            margin-left:0px;
+            >img{
+                height: 60px;
+            }
+        }
+
+    }
+}
+
+
+
+.header-click {
+    z-index: 101;
+    display: none;
+    position: fixed;
+    top: 0;
+    max-width: 400px;
+    padding: 0;
+    width: 80%;
+    box-shadow: 2px 0 20px 0 #000;
+    background: #1e1e1e;
+    list-style: none;
+    font-size: 15px;
+    transition: transform .5s ease;
+    transform: translate3d(-102%, 0, 0);
+
+    @media (max-width: 768px) {
+        display: block;
+    }
+
+
+    >li{
+        padding: 14px 0 14px 18px;
+        border-top: 1px solid #2F2F2F;
+        border-bottom: 1px solid rgba(14, 14, 14, 0.93);
+        cursor: pointer;
+    }
+
+    >li:first-child{
+        text-align: center;
+    }
+
+    >li:last-child{
+        background-color: #3C5B9B;
+    }
+}
+

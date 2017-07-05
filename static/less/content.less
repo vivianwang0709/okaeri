@@ -1,0 +1,44 @@
+//
+// content
+// --------------------------------------------------
+
+
+.content {
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    margin: 20px auto;
+
+    @media (max-width: 1000px) {
+        margin: 20px 0;
+        padding:10px 30px;
+    }
+    >p{
+        padding-bottom: 6px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.14);
+        font-size: 22px;
+        font-weight: bold;
+    }
+}
+
+
+.content-item{
+    display: inline-block;
+    margin: 10px;
+    width: 200px;    
+    >p{
+        margin: 10px 0;
+    }
+    @media (max-width: 500px) {
+        text-align: center;
+        width: 100%;
+        >p:first-child{
+            text-align: left;
+        }
+        >a>img{
+            max-width:200px;
+            width:100%;
+        }
+    }
+
+}

@@ -24,7 +24,7 @@ app.use(async (ctx, next) => {
 
 
 // static file support:
-if (! isProduction) {
+if (isProduction) {
     let staticFiles = require('./static-files');
     app.use(staticFiles('/static/', __dirname + '/static'));
 }

@@ -44,5 +44,6 @@ app.use(templating('views', {
 // add controller:
 app.use(controller());
 
-//app.listen(3000);
+app.listen(process.env.PORT || 5000);
+
 //console.log('app started at port 3000...');

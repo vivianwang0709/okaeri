@@ -83,6 +83,7 @@ a:hover {
   float: right;
   display: none;
   margin: 21px 0;
+  background-color: white;
 }
 @media (max-width: 768px) {
   .header-button > button {

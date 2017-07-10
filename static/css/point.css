@@ -1,0 +1,24 @@
+.point {
+  position: relative;
+  margin-top: 108px;
+}
+@media (max-width: 768px) {
+  .point {
+    margin-top: 93px;
+  }
+}
+.item > img {
+  margin: 0 auto;
+  width: 90%;
+  max-height: 430px;
+}
+@media (max-width: 768px) {
+  .item > img {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .item > img {
+    max-height: 250px;
+  }
+}

@@ -55,7 +55,6 @@ a:hover {
 .header-navbar > ul > li {
   display: inline-block;
   padding: 20px;
-  vertical-align: middle;
   height: 74px;
   cursor: pointer;
 }
@@ -84,6 +83,8 @@ a:hover {
   display: none;
   margin: 21px 0;
   background-color: white;
+  width: 41px;
+  height: 38px;
 }
 @media (max-width: 768px) {
   .header-button > button {
@@ -362,4 +363,41 @@ a:hover {
   width: 90%;
   background-color: white;
   z-index: 1000;
+}
+@media (max-width: 500px) {
+  .content2-info {
+    padding: 10px 10px 10px 20px;
+  }
+}
+.content2-info > .info-map {
+  float: left;
+  width: 450px;
+  height: 300px;
+  margin-right: 30px;
+  margin-top: 10px;
+}
+@media (max-width: 900px) {
+  .content2-info > .info-map {
+    width: 90%;
+    min-height: 200px;
+  }
+}
+.content2-info > .info-text {
+  float: left;
+  width: 400px;
+  font-size: 16px;
+  color: #74787E;
+  margin-top: 20px;
+}
+.content2-info > .info-text > ul > li {
+  margin-bottom: 10px;
+}
+.content2-info > .info-text > ul > li > span > a {
+  color: #74787E;
+}
+@media (max-width: 900px) {
+  .content2-info > .info-text {
+    margin-top: 20px;
+    width: 100%;
+  }
 }
